@@ -1,6 +1,6 @@
 import Slider from './Slider';
 
-import slide1 from "./assets/banner1.jpg"
+import slide1 from "../assets/gun.png"
 
 const Images = () => {
   const images = [slide1];

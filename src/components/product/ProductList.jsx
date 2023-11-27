@@ -1,30 +1,43 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import cube from "../assets/cube.jpeg";
+import gun from "../assets/gun.png"
+
 
 const ProductItems = [
     {
         
         name: "Mouser Toy Gun for Kids",
-        image: "https://m.media-amazon.com/images/I/41HsNio7bRL.jpg" ,
-        price: "₹32 / Piece",
+        image: gun,
+        price: "300 Pieces / Cartoon",
         stock: "Currently available",
-        product_details: "1. Pack Incorporates: 1*Mouser Toy Gun + 200 Pcs. BB Projectiles",
+        product_details: "1. Pack Incorporates: 1*Mouser Toy Gun",
     },
     {
      
-        name: "Mouser Toy Gun for Kid",
-        image: "https://m.media-amazon.com/images/I/41HsNio7bRL.jpg" ,
-        price: "₹32 / Piece",
+        name: "Cocu Cube",
+        image: cube,
+        price: "288 Pieces / Cartoon",
         stock: "Currently available",
-        product_details: "1. Pack Incorporates: 1*Mouser Toy Gun + 200 Pcs. BB Projectiles",
+        product_details: "1. Pack Incorporates: 1* Cocu Cube",
     }
 ]
 
+
+
 export default function ProductList(){
+
+  const navigate = useNavigate();
+
+  const handleClick = ()=>{
+    navigate('/contact')
+  }
+
     return(
         <>
         <div>
         {ProductItems.map((item) => (
-              <div key={item.name} className="sp mx-auto max-w-7xl px-2 py-10 lg:px-0">
+              <div key={item.name} className="sp mx-auto max-w-7xl px-2 py-10 lg:px-0 ">
               <div className="overflow-hidden">
                 <div className="mb-9 pt-4 md:px-6 md:pt-7 lg:mb-2 lg:p-8 2xl:p-10 2xl:pt-10">
                   <div className="items-start justify-between lg:flex lg:space-x-8">
@@ -57,7 +70,8 @@ export default function ProductList(){
                       <div className="pb-2" />
                       <div className="space-y-2.5 pt-1.5 md:space-y-3.5 lg:pt-3 xl:pt-4">
                           <button
-                            type="button"
+                            onClick={handleClick}
+                            type="submit"
                             className="w-full rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                           >
                             Ask for Details

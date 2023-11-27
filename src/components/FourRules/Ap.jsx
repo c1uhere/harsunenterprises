@@ -3,7 +3,7 @@ import { DollarSign, Zap, Moon, Filter } from 'lucide-react'
 
 export default function Ap() {
   return (
-    <div className='bg-blue-100 pt-10'>
+    <div className='pt-10'>
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12  ">
       <div className="mx-auto max-w-xl text-center">
         <div className="mx-auto inline-flex rounded-full bg-gray-100 px-4 py-1.5">

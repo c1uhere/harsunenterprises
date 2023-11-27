@@ -1,28 +1,34 @@
-import React from 'react';
+import React from "react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-        <div className="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-20">
-          <div className="max-w-md mx-auto">
-            <div className="flex items-center space-x-5">
-              <div className="block pl-2 font-semibold text-xl self-start text-gray-700">
-                <h2 className="leading-relaxed">Contact Us</h2>
-                <p className="text-sm text-gray-500 font-normal leading-relaxed">Our office address and contact details.</p>
-              </div>
-            </div>
-            <div className="divide-y divide-gray-200">
-              <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                <p><strong>Address:</strong> Your Company Address</p>
-                <p><strong>Email:</strong> your-email@example.com</p>
-                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-              </div>
-            </div>
+    <>
+      <section className="text-gray-600 body-font relative mt-10 pt-10">
+        <div className="absolute inset-0 bg-gray-300">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500.35952187974056!2d77.18258929305!3d28.741247955779905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01c4b38e6bbd%3A0x182f513c095f7bc5!2sP5RM%2BH3G%2C%20Hari%20Park%2C%20Mukandpur%20Part%202%2C%20Mukundpur%2C%20Delhi%2C%20110084!5e0!3m2!1sen!2sin!4v1701084717376!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{border:0}}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div className="container px-5 py-24 mx-auto flex">
+          <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+            <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
+              Contact Details
+            </h2>
+            <p className="leading-relaxed mb-5 text-gray-600">
+            Phone Number - +91-98180-86182 <br/>
+             Address - House no - 61, Gali no -5 Radha Vihar, Mukundpur, New Delhi, North Delhi, Delhi, 110042
+            </p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 
