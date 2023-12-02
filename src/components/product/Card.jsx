@@ -41,6 +41,7 @@ export default function Card() {
             alt={item.name}
             className="z-0 h-full w-full rounded-md object-cover"
           />
+          
           <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
           <div className="absolute bottom-4 left-4 text-left">
             <h1 className="text-lg font-semibold text-white">{item.name}</h1>
